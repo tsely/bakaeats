@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A hunger-fueled decision-maker that saves you from the 'I dunno, what do you want?' loop.">
+        <meta name="keywords" content="food, decision, random, restaurant, hungry">
+        <meta name="author" content="Timothy Sely">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <title>BAKAEATS</title>
+        <link rel="stylesheet" href="src/styles/main.css">
+        <link rel="stylesheet" href="src/styles/button.css">
+        <script src="src/components/cuisines.js" defer></script>
+        <script src="src/components/ui.js" defer></script>
+        <script src="src/components/main.js" defer></script>
+    </head>
+    <body>
+        <main class="container">
+            <section id="home" class="screen">
+                <h1>BAKAEATS</h1>
+                <p>
+                    Can't decide what or where to eat? Let us help!<br>
+                    Pick a random cuisine or choose a few you're craving!
+                </p>
+                <div class="button-group">
+                    <button id="random-btn" type="button">Surprise Me</button>
+                    <button id="choose-btn" type="button">Let Me Choose</button>
+                </div>
+                <p id="result"></p>
+            </section>
+
+            <section id="choose" class="screen hidden">
+                <h2>What are you <span>craving</span>?</h2>
+                <div id="cuisine-grid" class="button-grid"></div>
+                <div class="button-group choose-actions">
+                    <button id="back-btn" type="button">Back</button>
+                    <button id="pick-btn" type="button">Pick For Me</button>
+                </div>
+                <p id="choose-result"></p>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "MatchaWorld";
+    src: url("../../assets/fonts/MatchaWorld.woff2") format("woff2"),
+        url("../../assets/fonts/MatchaWorld.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    color: lightsalmon;
+}
+
+h2 span {
+    color: lightsalmon;
+}
+
+body {
+    margin: 0;
+    font-family: "MatchaWorld", sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.screen {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.cuisine-name {
+    color: lightsalmon;
+}
